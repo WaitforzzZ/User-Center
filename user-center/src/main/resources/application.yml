@@ -16,6 +16,8 @@ spring:
         # namespace: 56116141-d837-4d15-8842-94e153bb6cfb
         # 指定集群名称
         # cluster-name: NJ
+        metadata:
+          version: v1
   application:
     # 服务名称尽量用-， 不要用_， 不要用特殊字符
     name: user-center
