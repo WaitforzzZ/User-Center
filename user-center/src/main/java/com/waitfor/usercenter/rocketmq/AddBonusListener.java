@@ -6,6 +6,7 @@ import com.waitfor.usercenter.domain.dto.messaging.UserAddBonusMsgDTO;
 import com.waitfor.usercenter.domain.entity.bonus.BonusEventLog;
 import com.waitfor.usercenter.domain.entity.user.User;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import java.util.Date;
 @Service
 @RocketMQMessageListener(consumerGroup = "consumer-group", topic = "add-bonus")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
+@Slf4j
 public class AddBonusListener implements RocketMQListener<UserAddBonusMsgDTO> {
     private final UserMapper userMapper;
     private final BonusEventLogMapper bonusEventLogMapper;
@@ -39,6 +41,6 @@ public class AddBonusListener implements RocketMQListener<UserAddBonusMsgDTO> {
                   .description("投稿加积分..")
                   .build()
         );
-
+        log.info("积分添加完毕...");
     }
 }
