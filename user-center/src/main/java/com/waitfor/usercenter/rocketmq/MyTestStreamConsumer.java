@@ -1,3 +1,4 @@
+/*
 package com.waitfor.usercenter.rocketmq;
 
 import lombok.extern.slf4j.Slf4j;
@@ -16,14 +17,17 @@ public class MyTestStreamConsumer {
         throw new IllegalArgumentException("抛异常");
     }
 
-    /**
+    */
+/**
      * 全局异常处理
      *
      * @param message 发生异常的消息
-     */
+     *//*
+
     @StreamListener("errorChannel")
     public void error(Message<?> message){
         ErrorMessage errorMessage = (ErrorMessage) message;
         log.info("发生异常, errorMessage = {}", errorMessage);
     }
 }
+*/
