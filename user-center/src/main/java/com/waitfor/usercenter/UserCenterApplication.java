@@ -11,7 +11,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan("com.waitfor.usercenter.dao")
 @SpringBootApplication
 //@EnableDiscoveryClient
-@EnableBinding({Sink.class, MySink.class})
+//@EnableBinding({Sink.class, MySink.class})
+@EnableBinding(Sink.class)
 public class UserCenterApplication {
 
 	public static void main(String[] args) {

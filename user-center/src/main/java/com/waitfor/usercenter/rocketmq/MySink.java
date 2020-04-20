@@ -1,3 +1,4 @@
+/*
 package com.waitfor.usercenter.rocketmq;
 
 import org.springframework.cloud.stream.annotation.Input;
@@ -10,3 +11,4 @@ public interface MySink {
     @Input(MY_INPUT)
     SubscribableChannel input();
 }
+*/
