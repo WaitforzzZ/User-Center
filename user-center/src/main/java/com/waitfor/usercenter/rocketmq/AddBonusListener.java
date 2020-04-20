@@ -1,4 +1,3 @@
-/*
 package com.waitfor.usercenter.rocketmq;
 
 import com.waitfor.usercenter.dao.bonus.BonusEventLogMapper;
@@ -45,4 +44,3 @@ public class AddBonusListener implements RocketMQListener<UserAddBonusMsgDTO> {
         log.info("积分添加完毕...");
     }
 }
-*/
