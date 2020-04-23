@@ -7,7 +7,7 @@ import com.waitfor.usercenter.domain.dto.user.JwtTokenRespDTO;
 import com.waitfor.usercenter.domain.dto.user.LoginRespDTO;
 import com.waitfor.usercenter.domain.dto.user.UserLoginDTO;
 import com.waitfor.usercenter.domain.dto.user.UserRespDTO;
-import com.waitfor.usercenter.until.JwtOperator;
+import com.waitfor.usercenter.util.JwtOperator;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.error.WxErrorException;
 import org.springframework.beans.factory.annotation.Autowired;
