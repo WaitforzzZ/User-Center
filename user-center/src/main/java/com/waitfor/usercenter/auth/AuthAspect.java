@@ -59,7 +59,7 @@ public class AuthAspect {
         return attributes.getRequest();
     }
 
-    @Around("@annotation(com.waitfor.contentcenter.auth.CheckAuthorization)")
+    @Around("@annotation(com.waitfor.usercenter.auth.CheckAuthorization)")
     public Object checkAuthorization(ProceedingJoinPoint point) throws Throwable {
         try {
             // 1. 验证token是否合法；
